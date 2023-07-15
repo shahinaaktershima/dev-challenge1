@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            width: 100vw;
+            height: 550px;
+            display: block;
+            text-align: center;
+            
+        }
+        .container{
+            width: 80%;
+            height: 400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .picture{
+            height: 350px;
+            width: 40%;
+          
+        }
+
+         .img-content{ 
+            height:80%;
+            width:70%;
+            padding-left: 40px;
+            padding-top: 50px;
+        } 
+        .text-content{
+            padding-top: 50px;
+            padding-left: 20px;
+            gap: 60px;
+            text-align:justify; 
+        }
+        .div-text{
+            margin-bottom: 40px;
+        }
+        .title{
+            font-weight: 900;
+            margin-bottom: 40px;
+        }
+        .btn{
+            background-color: rgb(61, 56, 56);
+            color: white;
+            border: none;
+            padding: 10px;
+        }
+        .btn:hover{
+            background-color: blue;
+        }
+         .text{
+            margin-top: 100px;
+        }
+        @media screen and (max-width:576px)
+        { .main{
+            text-align:center;
+            height: 100vh;
+        }
+            .container {
+                flex-direction: column;
+                margin-top: 10px;
+                gap: 0px;
+            }
+            .picture{
+                height: 50%;
+                width: 50%;
+            }
+         .img-content{ 
+                padding: 0px; 
+    }  
+        /* .text-content{
+           padding:0px;
+           gap:0px;
+        } */
+        .div-text{
+            margin-bottom: 8px;
+        }
+        .title{
+            font-weight: 200;
+            margin-bottom: 8px;
+        }
+        .btn{
+            padding: 0px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <h2> 404 page not found</h2>
+    </header>
+    <main class="main">
+        <div class="container">
+        <div class="picture">
+            <img class="img-content" src="./Scarecrow.png" alt="">
+        </div>
+        <div class="picture text-content">
+          <h1 class="title">I have bad news <br> for you</h1>
+            <p class="div-text">The page you are looking <br> for might be removed <br> or temporarily unavailable</p>
+            <button class="btn">GO to home page</button>
+        </div>
+       </div> 
+       <p class="text">created by shahinaaktershima- divchallenge.io</p>
+    </main>
+       <footer></footer>
+   
+</body>
+</html>
